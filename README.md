@@ -11,7 +11,7 @@
 ### 关系
 - jingtum-lib == swtc-lib == jcc_jingtum_lib
 - jingtum-base-lib == swtc-wallet
-- jcc_jingtum_lib == swtc-factory
+- jcc_jingtum_base_lib == swtc-factory
 - 增加或者分离
   - swtc-x-address-codec
   - swtc-address-codec
