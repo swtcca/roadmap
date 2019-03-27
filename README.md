@@ -12,12 +12,15 @@
 - jingtum-lib == swtc-lib == jcc_jingtum_lib
 - jingtum-base-lib == swtc-wallet
 - jcc_jingtum_base_lib == swtc-factory
-- 增加或者分离
-  - swtc-x-address-codec
-  - swtc-address-codec
-  - swtc-keypairs
-  - swtc-tum3
+- 主要包 
+  - swtc-lib
+  - swtc-transaction (to come)
   - swtc-serializer
+  - swtc-factory
+  - swtc-wallet
+  - swtc-keypairs
+  - swtc-address-codec
+  - swtc-x-address-codec
 
 ### 增强
 1. 格式化代码
@@ -28,3 +31,22 @@
 6. 效率工具 swtc-toolset
 7. 完善示例
 8. 添加测试及测试自动化
+
+### 开源参与
+- 所有swtc-xxyyzz代码仓库遵循统一要求
+  - 通过PR提交代码更改 - clone push
+  - 提交时强制代码格式化 - prettier
+  - travis集成 - test lint on submit and daily cron
+- 默认发布es6标准的库
+- 测试node版本 - 钱包以下v6, 钱包 钱包以上v8
+- 选择支持库时要求零配置webpack和browserify
+- 建议步骤
+  - fork代码仓库
+  - clone到本地
+  - checkout工作分支
+  - [可选]启用travis
+  - 工作
+  - 提交 测试
+  - 同步 PR (尽量提供相对完整的功能实现, 尽量提供相应的测试)
+  - 同步
+  - 从第三步再开始
