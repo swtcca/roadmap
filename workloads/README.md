@@ -36,10 +36,11 @@
 - swtc-apps-examples 更新模版功能展示添加框架支持
   - 2 周/人
 
-### 用typescript 实现钱包以上， 提供上下文关联的帮助
-- 4 周/人
+### code refactor (实现钱包以上， 提供上下文关联的帮助)
+- 5 周/人
 - 低优先级
 - 内容
+  - class替代function constructor
   - typescript包装
   - 对钱包和lib中的所有的变量/函数/类提供类型声明
 
