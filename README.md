@@ -9,28 +9,28 @@
 - ![图示](https://raw.githubusercontent.com/swtcca/roadmap/master/images/swtclib.png)
 
 ### 关系
-- jingtum-lib == swtc-lib == jcc_jingtum_lib
-- jingtum-base-lib == swtc-wallet
-- jcc_jingtum_base_lib == swtc-factory
+- jingtum-lib == **swtc-lib** == jcc_jingtum_lib
+- jingtum-base-lib == **swtc-wallet**
+- jcc_jingtum_base_lib == **swtc-factory**
 - 主要包 
   - swtc-lib
-  - swtc-transaction (to come)
+  - **swtc-transaction** with local sign and submit functionality
   - swtc-serializer
-  - swtc-factory
-  - swtc-wallet
+  - **swtc-utils**, **swtc-api** **swtc-toolset**
+  - swtc-factory (includes swtc-wallet swtc-base-lib)
   - swtc-keypairs
   - swtc-address-codec
-  - swtc-x-address-codec
+  - swtc-chains
 
 ### 增强
-1. 格式化代码
-2. 净化serializer
-3. 分离swtc-transaction
-4. 用class实现
-5. 用typescript 实现， 提供上下文关联的帮助
-6. 效率工具 swtc-toolset
-7. 完善示例
-8. 添加测试及测试自动化
+1. 格式化代码 - finished
+2. 净化serializer - finished
+3. 分离transaction - finished
+4. 用class实现 - factory api toolset 
+5. 效率工具 swtc-toolset
+6. 用typescript 实现， 提供上下文关联的帮助 - swtc-api
+7. 完善示例 - in progress
+8. 添加测试及测试自动化 - in progress
 
 ### 开源参与
 - 所有swtc-xxyyzz代码仓库遵循统一要求
