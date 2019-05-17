@@ -63,3 +63,23 @@
 
 ### 对于新功能或者特性，基本上以适配jingtum-lib为主
 - 特殊要求，工作量不定
+
+-------------------------------------------------------------
+
+## 计划外工作
+
+### swtc-api 实现及文档
+- 1 周/人
+- 内容
+   - 实现 - 已完成
+   - swtc-api所有包装和实例文档
+   - jingtum-api对应文档
+
+### 支持井通联盟连
+- 3 周/人
+- 内容
+   - 新包 x-swtc-lib (同等支持jingtum, bizain, call, stm, guirentong ...)
+   - refactor swtc-serializer swtc-utils swtc-transactions swtc-lib/*
+   - adjustment and cleaning
+   - test
+   - readme
