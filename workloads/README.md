@@ -1,3 +1,5 @@
+[保持软件库对上游的更新](update.md)
+
 # Estimated Workloads (rough)
 > ## 工作量估计
 > ## 数据
