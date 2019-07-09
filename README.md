@@ -1,52 +1,33 @@
-# roadmap
+# roadmap 路线图
 
-### 目标
-> #### 试验swtc-lib, 提高开发体验
-> #### 反馈促进官方库
-> #### 创建合适的样例和效率工具
+---
 
-### 可视
-- ![图示](https://raw.githubusercontent.com/swtcca/roadmap/master/images/swtclib.png)
+## [SWTCAPLAN A计划](https://github.com/swtcca/aplan)
 
-### 关系
-- jingtum-lib == **swtc-lib** == jcc_jingtum_lib
-- jingtum-base-lib == **swtc-wallet**
-- jcc_jingtum_base_lib == **swtc-factory**
-- 主要包 
-  - swtc-lib
-  - **swtc-transaction** with local sign and submit functionality
-  - swtc-serializer
-  - **swtc-utils**, **swtc-api** **swtc-toolset**
-  - swtc-factory (includes swtc-wallet swtc-base-lib)
-  - swtc-keypairs
-  - swtc-address-codec
-  - swtc-chains
+### 目标 - 改进公链生态
+> #### 提供可靠的基于公开节点的websocket公共访问服务
+> #### 提供可靠的基于公开节点的non-websocket公共访问服务
+> #### 提供基于生态节点的定制访问服务
 
-### 增强
-1. 格式化代码 - finished
-2. 净化serializer - finished
-3. 分离transaction - finished
-4. 用class实现 - factory api toolset 
-5. 效率工具 swtc-toolset
-6. 用typescript 实现， 提供上下文关联的帮助 - swtc-api
-7. 完善示例 - in progress
-8. 添加测试及测试自动化 - in progress
+### 背景 - 问题
+> #### 井通的api服务存在安全性问题 而且不稳定不可靠
+> #### 井畅的rpc服务作为公司的服务 有些应用不期望依赖
+> #### 井通的节点历来没有开放的意愿
+> #### [开放的公链生态节点可靠性非常低 < 50%](http://www.swtcdocs.org/zh_CN/latest/wiki/node/) 开发体验差
 
-### 开源参与
-- 所有swtc-xxyyzz代码仓库遵循统一要求
-  - 通过PR提交代码更改 - clone push
-  - 提交时强制代码格式化 - prettier
-  - travis集成 - test lint on submit and daily cron
-- 默认发布es6标准的库
-- 测试node版本 - 钱包以下v6, 钱包 钱包以上v8
-- 选择支持库时要求零配置webpack和browserify
-- 建议步骤
-  - fork代码仓库
-  - clone到本地
-  - checkout工作分支
-  - [可选]启用travis
-  - 工作
-  - 提交 测试
-  - 同步 PR (尽量提供相对完整的功能实现, 尽量提供相应的测试)
-  - 同步
-  - 从第三步再开始
+### 方案
+> #### 基于生态节点，动态更新可用的websocket节点列表并且以固定的方式提供
+> #### 开发安全的公共访问服务及对应的客户端库，部署至部分公共生态节点 (可以随负载调整规模)
+> #### 基于生态节点，动态更新可用的non-websocket节点列表并且以固定的方式提供
+> #### 集成到swtc-xxx开发库可以默认提供分布式中大型应用访问支持
+> #### 额外: 节点的管理可以按需提供有意义的公链交易数量
+
+### 支出
+> #### 合适的激励，按照管理收集的数据给予部分节点
+> #### 设计 2人天， 开发 15人天(服务端/客户端/管理), 测试 3人天 文档 5人天
+> #### 管理 2人天/月
+
+---
+
+## [SWTCLIB 开发库 - 已完成](swtclib)
+
